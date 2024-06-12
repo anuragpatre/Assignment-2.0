@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+
+.receipt-container {
+    max-width: 500px;
+    margin: auto;
+    background: rgb(174, 165, 165);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(161, 150, 150, 0.1);
+    font-family:Edu NSW ACT Foundation;
+    
+}
+.header {
+    text-align: center;
+    margin-bottom: 18px;
+    font-style: italic;
+    color:  #b300b3;
+    font-family: Charm;
+}
+.header h1 {
+    margin: 5px;
+}
+.header p {
+    margin: 8px 0 0;
+}
+.details, .items, .total {
+    margin-bottom: 20px;
+}
+.details p, .total p {
+    margin: 5px 0;
+}
+.items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.items th, .items td {
+    border: 2px solid #ede3e3;
+    padding: 10px;
+    text-align: left;
+}
+.items th {
+    background-color:cadetblue;
+    color:black;
+}
+.total {
+    text-align: right;
+}
+/* Media Queries */
+@media (max-width: 600px) {
+    .receipt-container {
+        padding: 12px;
+    }
+    .header h1 {
+        font-size: 26px;
+    }
+    .items th, .items td {
+        padding: 6px;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .receipt-container {
+        padding: 15px;
+    }
+    .header h1 {
+        font-size: 28px;
+    }
+    .items th, .items td {
+        padding: 7px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .receipt-container {
+        padding: 20px;
+    }
+    .header h1 {
+        font-size: 32px;
+    }
+    .items th, .items td {
+        padding: 8px;
+    }
+}
